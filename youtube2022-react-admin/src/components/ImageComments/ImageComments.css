@@ -1,0 +1,333 @@
+/* Existing styles for .image-container and .comment-popup */
+.image-comments-container{
+  display: flex;
+  background-color: #f1f5f8;
+  height: 80vh;
+}
+.image-rightbar{
+ margin-left: 24.5vw;
+ width: 75%;
+ display: flex;
+ flex-direction: column;
+}
+.image-container-overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+}
+.image-container {
+  position: relative;
+  cursor: crosshair !important;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  cursor:crosshair;
+  position: relative;
+}
+
+.comment-popup {
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 208px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  z-index: 3;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* CSS for the comment index */
+.comment-index {
+  position: absolute;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%; /* Make it a circle */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 2;
+}
+.comment-index:hover{
+  cursor: pointer;
+}
+
+.comment-popup input[type="text"] {
+  width: 10vw;
+  border: none;
+  padding: 5px;
+  margin: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+.comment-popup-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.comment-popup-button:hover {
+  background-color: #0056b3;
+}
+
+/* New styles for .comment-sidebar */
+.comment-sidebar {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 25%;
+  position: absolute;
+  height: 77.5vh;
+  overflow-y: scroll;
+}
+
+.comment-sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.comment-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.comment-sidebar li {
+  margin-bottom: 20px;
+}
+.comment-sidebar li:hover{
+  background-color: #f1f5f8;
+  cursor: pointer;
+}
+
+.comment-content {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.comment-text {
+  margin-top: 5px;
+  word-wrap: break-word;
+}
+
+.comment-actions {
+  margin-top: 5px;
+}
+
+.comment-popup-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.comment-popup-button:hover {
+  background-color: #0056b3;
+}
+
+.comment-sidebar hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.comment-index-sidebar{
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%; /* Make it a circle */
+}
+
+
+
+/* Style for the dropdown menu */
+.comment-dropdown {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.dropdown-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.comment-dropdown span:hover{
+  background-color: #fff;
+}
+
+.dots {
+  font-size: 20px;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style for dropdown items (buttons) */
+.dropdown-content button {
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: black;
+}
+
+.dropdown-content button:hover {
+  background-color: #f1f1f1;
+}
+
+
+/* Add these styles to your existing CSS */
+
+/* Styles for the information bar */
+.info-bar {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left:25px ;
+}
+.info-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-bottom{
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.info-left {
+  flex: 1;
+  font-weight: bold;
+}
+
+.image-info {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.info-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the scale dropdown */
+.scale-dropdown {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+/* Styles for the download and fullscreen buttons */
+.download-button,
+.fullscreen-button,
+.DrawRectangleButton {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.download-button:hover,
+.fullscreen-button:hover,
+.DrawRectangleButton:hover {
+  background-color: #f1f5f8;
+}
+
+/* styles.css */
+
+.DrawingTool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ColorButtons {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.ColorButton {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.EnableDrawingButton,
+.DisableDrawingButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.EnableDrawingButton:hover,
+.DisableDrawingButton:hover {
+  background-color: #0056b3;
+}
+
+.canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Adjust the z-index to ensure it's above the image */
+  width: 100%;
+  height: 100%;
+}
+
+
+.canvas-container canvas {
+  border: 1px solid #000;
+  width: 100%;
+  height: 100%;
+}

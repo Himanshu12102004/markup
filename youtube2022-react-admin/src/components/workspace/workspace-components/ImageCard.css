@@ -1,0 +1,98 @@
+/* imagecard.css */
+
+.imagecard {
+  position: relative;
+  background-color: #f1f5f8; /* White background */
+  color: #000; /* Black font color */
+  width: 250px; /* Adjust width as needed */
+  border: 2px solid #f1f5f8;
+  border-radius: 15px; /* Rounded corners */
+  margin: 15px;
+}
+.imagecard-container{
+    display: flex;
+}
+.imagecard-image {
+  width: 100%; /* Image covers the full width of the card */
+  height: 40%; /* Image covers 40% of the card's height */
+  object-fit: cover; /* Maintain aspect ratio and cover the image */
+  border-radius: 5px 5px 0 0; /* Rounded corners for the top */
+}
+
+.imagecard-content {
+  padding: 20px 10px 10px;
+  background-color: #fff;
+}
+
+.imagecard-title {
+  font-size: 18px;
+}
+
+.imagecard-time {
+  font-size: 14px;
+  color: #888; /* Timestamp color */
+}
+
+/* Style for the "Open" button */
+.imagecard-button {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+  pointer-events: none;
+}
+.imagecard-button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Apply blur effect on hover */
+.imagecard:hover .imagecard-image {
+  filter: blur(15px);
+}
+
+.imagecard-overlay {
+  position: relative;
+}
+.imagecard-overlay:hover{
+    cursor: pointer;
+}
+
+.imagecard-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity for darkness */
+  border-radius: 5px;
+  display: none; /* Initially hidden */
+}
+/* Show the button and overlay on hover */
+.imagecard:hover .imagecard-button,
+.imagecard:hover .imagecard-overlay::before {
+  display: block;
+}
+
+.imagecard-share{
+    visibility: hidden;
+}
+
+.imagecard:hover .imagecard-share{
+    visibility: visible;
+}
+
+
+
+
+
+

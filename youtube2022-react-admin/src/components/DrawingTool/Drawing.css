@@ -1,0 +1,54 @@
+/* styles.css */
+
+.DrawingTool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ColorButtons {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.ColorButton {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.EnableDrawingButton,
+.DrawShapeButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.EnableDrawingButton:hover,
+.DrawShapeButton:hover {
+  background-color: #0056b3;
+}
+
+.canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* This allows click events to pass through the canvas */
+  z-index: 1; /* Adjust the z-index to ensure it's above the image */
+}
+
+
+.canvas-container canvas {
+  border: 1px solid #000;
+  cursor: crosshair;
+}

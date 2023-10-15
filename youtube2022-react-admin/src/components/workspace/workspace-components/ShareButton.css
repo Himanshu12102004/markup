@@ -1,0 +1,136 @@
+
+.share-popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.share-popup-content {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 35vw;
+  padding: 2px;
+}
+.share-popup-content h2{
+    font-size: 26px;
+    font-weight: 50;
+}
+
+.share-popup-input {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  outline:none;
+}
+
+.share-popup-send-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+
+.share-popup-send-button:hover {
+  background-color: #0056b3;
+}
+
+.share-popup-close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333; /* Close button color */
+  margin-left: 492px;
+}
+
+.share-popup-close-button:hover {
+  color: #555; /* Hover color */
+}
+
+.send-flex-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #f1f5f8;
+  border-radius: 15px;
+  padding: 2px 0px 2px 5px;
+}
+
+.share-bottom{
+  background-color: #f1f5f8;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+
+
+
+
+/* Style for the container of the custom checkbox */
+.custom-checkbox {
+  position: relative;
+  padding-left: 15px; /* Adjust the padding as needed */
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Hide the default checkbox input */
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Style for the custom checkbox indicator */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px; /* Adjust the size of the checkbox as needed */
+  width: 20px;
+  background-color: grey; /* Green color when not checked */
+  border: 1px solid #fff; /* Green border when not checked */
+  border-radius: 3px;
+}
+
+/* Style for the custom checkbox when checked */
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #00ff00; /* Green color when checked */
+  border: 1px solid #00ff00; /* Green border when checked */
+}
+
+/* Style for the checkmark inside the checkbox */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Display the checkmark when the checkbox is checked */
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style for the checkmark icon (usually a tick) */
+.custom-checkbox .checkmark:after {
+  left: 7px; /* Adjust the position of the icon as needed */
+  top: 3px; /* Adjust the position of the icon as needed */
+  width: 5px; /* Adjust the size of the icon as needed */
+  height: 10px; /* Adjust the size of the icon as needed */
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}

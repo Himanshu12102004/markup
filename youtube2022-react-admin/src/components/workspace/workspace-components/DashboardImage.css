@@ -1,0 +1,52 @@
+
+/* Styling for the main container */
+.dashboard-container {
+  padding: 10px;
+}
+
+/* Styling for the image cards (on the right) */
+.image-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Add spacing between image cards */
+  flex-direction: row;
+}
+
+/* Styling for UploadButton and GuestLogin components (customize as needed) */
+.upload-button {
+  margin-right: 10px;
+}
+/* Custom classes for different grid sizes */
+.grid-3 {
+  width: calc(33.33% - 38px) !important; /* 33.33% width for 3 cards in a row */
+}
+
+.grid-6{
+  width: calc(16.66% - 38px) !important; /* 16.66% width for 6 cards in a row */
+}
+
+.grid-9{
+  width: calc(11.11% - 38px) !important; /* 11.11% width for 9 cards in a row */
+}
+
+
+.thumbnail-grid {
+  display: inline-block;
+  gap: 5px;
+}
+
+/* Styling for the grid buttons */
+.grid-button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* Styling for the selected grid button */
+.grid-button.active{
+  background-color: #007bff;
+  color: #fff;
+}

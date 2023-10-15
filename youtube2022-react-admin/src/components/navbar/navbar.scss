@@ -1,0 +1,78 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f5f8;
+
+  .dropdown_menu {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+
+    .avatar {
+      background-color: #fff;
+      color: grey;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 15px;
+      border: 1px solid rgb(100,100,100);
+      border-radius: 5px;
+      margin:10px 15px;
+    }
+
+    .drop_menu {
+      position: relative;
+      display: inline-block;
+    }
+    /* Style for the "User" button */
+    #userButton{
+      background-color: #fff;
+      color: black;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 15px;
+      border: 1px solid rgb(100,100,100);
+      border-radius: 5px;
+      margin:10px 15px;
+    }
+    .drop_menu button {
+      background-color: #fff;
+      color: grey;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    /* Style for the dropdown content (hidden by default) */
+    .drop_menu .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    /* Style for the links in the dropdown menu */
+    .drop_menu .dropdown-content button {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Change link color on hover */
+    .drop_menu .dropdown-content button:hover {
+      background-color: #f1f5f8;
+    }
+
+    /* Show the dropdown menu when the user clicks on the "User" button */
+    .drop_menu:hover .dropdown-content {
+      display: block;
+    }
+  }
+  hr {
+    height: 0;
+    border: 0.5px solid rgb(230, 227, 227);
+  }
+}

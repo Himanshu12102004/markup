@@ -1,0 +1,99 @@
+.searchtab{
+    width: 80vw;
+    flex: 1;
+    hr {
+    height: 0;
+    border: 0.5px solid rgb(230, 227, 227);
+    margin-top: 10px;
+  }
+}
+
+.workspace{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainsection{
+
+    flex: 5;
+    margin: 10px 20px;
+    height: 60 vh;
+    width: 80 vw;
+}
+
+.searchtab-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  .search-go {
+    display: flex;
+    border: 1px solid #d5d7d9;
+    border-radius: 5px;
+    padding: 7px 5px;
+    input {
+      padding: 10px;
+      border: none;
+      outline: none;
+      width: 25vw;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0px 10px;
+    }
+  }
+  .search-or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+  }
+}
+.upload{
+    background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 5px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 8px 0px;
+}
+.invite button{
+    background-color: #fff;
+      color: #007bff;
+      font-size: 15px;
+      border: 1px solid #007bff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0px 10px;
+}
+
+.upload-button-overlay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  input{
+    background-color: #fff;
+      color: black;
+      font-size: 15px;
+      padding-left: 120px;
+      padding-bottom: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0px 10px;
+  }
+}

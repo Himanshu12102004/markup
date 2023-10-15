@@ -1,0 +1,62 @@
+.Head {
+  display: flex;
+  justify-content: space-between;
+  span {
+    font-size: 1.5rem;
+    margin-left: 40px;
+    font-weight: bold;
+  }
+  button {
+    background-color: #fff;
+    color: #007bff;
+    font-size: 15px;
+    border: 1px solid #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 40px;
+  }
+}
+.teamcontent {
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.Tabnames {
+  button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: grey;
+  }
+  button:hover {
+    color: black;
+  }
+  hr {
+    height: 0;
+    border: 0.5px solid rgb(230, 227, 227);
+    margin: 5px 0px;
+  }
+}
+.Teamtab {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inactiveTab {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.ContentMembers {
+  display: block;
+}
+.ContentGuests {
+  display: block;
+}

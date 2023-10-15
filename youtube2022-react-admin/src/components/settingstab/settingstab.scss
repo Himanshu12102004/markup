@@ -1,0 +1,45 @@
+.SettingsTab {
+    margin-top: 20px;
+  span {
+    font-size: 1.5rem;
+    margin-left: 40px;
+    font-weight: bold;
+  }
+}
+.settingcontainer{
+     margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+    button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: black;
+  }
+  button:hover {
+    color: grey;
+  }
+  hr {
+    height: 0;
+    border: 0.5px solid rgb(230, 227, 227);
+    margin: 5px 0px;
+  }
+}
+.name {
+  display: flex;
+}
+.url {
+  display: flex;
+}
+
+.namein {
+  margin-left: 350px;
+}
+.urlin {
+  margin-left: 350px;
+}
+
+.icon {
+  width: 20vw;
+}
