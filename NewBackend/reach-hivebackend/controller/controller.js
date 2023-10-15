@@ -254,25 +254,6 @@ export const postComment = async (req, res) => {
               y1: req.body.comment.y1,
             },
           });
-          // const userExists = await comment
-          //   .findOne({
-          //     commenter: {
-          //       $elemMatch: { "user.userId": req.userId },
-          //     },
-          //   })
-          //   .exec();
-
-          // if (userExists) {
-          //   await comment.findOneAndUpdate({
-          //     commenter: {
-          //       $elemMatch: { "user.userId": req.userId },
-          //     },
-          //   });
-          // } else {
-          //   console.log(
-          //     `User with userId ${req.userId} does not exist in comments.`
-          //   );
-          // }
         } catch (error) {
           console.error("Error finding user in comments:", error);
         }
